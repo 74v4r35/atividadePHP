@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\NotificationController;
-Route::get('/notify',[NotificationController::class, 'notify']);
-
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\NotificationController;
 Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/notify', [NotificationController::class, 'notify']);
